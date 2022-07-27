@@ -2,6 +2,8 @@
 
 prerequisite - postgresql, node.js, package: express, express-graphql, graphql, knex, pg
 
+npm i - to install the packages
+
 npm run migrate - to create a merchant table in postgresql
 
 npm run devStart - to kick start 
