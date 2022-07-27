@@ -33,6 +33,16 @@ const _descQueryerchantStatus = {
     desc: 'give a status of querying merchant'
 }
 
+const _desc_mtCreateMerchant = 'Create new merchant';
+
+const _desc_mtUpdateMerchant = 'Update a merchant';
+
+const _desc_mtUpdateIsActiveInBulk = 'Toggle “Is Active” in bulk';
+
+const _desc_qrMerchantById = 'Fetch merchant by ID';
+
+const _desc_qrMerchants = 'Fetch merchants, with pagination and sorting';
+
 
 module.exports = {
     _descRootQuery,
@@ -41,5 +51,10 @@ module.exports = {
     _decsRespondMerchant,
     _descRespondResultStatus,
     _descToggleResultStatus,
-    _descQueryerchantStatus
+    _descQueryerchantStatus,
+    _desc_mtCreateMerchant,
+    _desc_mtUpdateMerchant,
+    _desc_mtUpdateIsActiveInBulk,
+    _desc_qrMerchantById,
+    _desc_qrMerchants
 }

@@ -4,7 +4,7 @@ const PORT = '5000';
 // database connection detail
 const DATABASE = 'postgres';
 const DATABASE_USER = 'postgres';
-const DATABASE_PASSWORD = '123456';
+const DATABASE_PASSWORD = 'Projbb288&&';
 const DATABASE_URL = 'localhost';
 const DATABASE_PORT = 5432;
 const DATABASE_CLIENT = 'postgresql';

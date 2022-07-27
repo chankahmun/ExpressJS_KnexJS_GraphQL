@@ -3,7 +3,7 @@ const { _respCommonMsg } = require('../schema/respMsg');
 
 const _resUpdateMerchant =  async(parent, args) => {
     let resp_msg = new _respCommonMsg();
-    let status =  false, errmsg = "";
+    let status =  false, errmsg = '';
 
     try{
 
