@@ -1,0 +1,82 @@
+
+_mtCreateMerchant
+mutation{
+	_mtCreateMerchant(
+    merchant_name : "Jason Ong",
+  	phone_no: "01166227788",
+    latitude:10.9800,
+    longtitude:109.0022,
+    is_active:true,
+   
+  ){
+  	err_message,
+    status
+	}
+}
+
+_mtUpdateMerchant
+mutation{
+  _mtUpdateMerchant(
+    id: 1, 
+    merchant_name: "chan mun mun", 
+    phone_no: "012345678",
+    latitude: 50.1002,
+    longtitude:100.3312,
+    is_active:false,
+    
+  ){
+		status,
+    err_message
+  }
+}
+
+_mtUpdateIsActiveInBulk
+mutation{
+  _mtUpdateIsActiveInBulk(ids:[3,4,5,6]){
+    status,
+    err_message,
+    list{
+      id,
+      status
+    }
+  }
+  
+}
+
+_qrMerchantById
+query{
+  _qrMerchantById(id:4){
+    status,
+    err_message,
+    max_page,
+    data_size,
+    list{
+      merchant_name,
+      phone_no,
+      longitude,
+      latitude,
+      is_active,
+      recorded_datetime
+    }
+  }
+}
+
+_qrMerchants
+query{
+  _qrMerchants(payload_size: 0, page_no: 0){
+    status,
+    err_message,
+    max_page,
+    data_size,
+    list{
+      id,
+      merchant_name,
+      phone_no,
+      longitude,
+      latitude,
+      is_active,
+      recorded_datetime
+    }
+  }
+  
+}
