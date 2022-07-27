@@ -11,7 +11,7 @@ const _resUpdateActiveInBulk = async(parent, args) =>{
 
             let id = args.ids[cnt];
             let udpstatus = false;
-            let res = await db('tbl_merchants').select('is_active').where('id', id).then((result)=>result)
+            let res = await db('tbl_merchants').select('is_active').where('id', id).then((result)=>result);
 
             if(res.length > 0){
                 let active = res[0]['is_active'];
